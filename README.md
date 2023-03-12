@@ -1,2 +1,2 @@
 # ebac_curso_front-end
-Exercício sobre git e github
+Exercício com git e github.
