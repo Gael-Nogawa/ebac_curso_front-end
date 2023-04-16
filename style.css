@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    text-decoration: none;
+    background-color: rgb(58, 118, 152);
+}
+
+#logo {
+    font-size: 35px;
+}
+#menu {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(132, 174, 222);
+    box-shadow: black 0.1em 0.1 em 0.2em;
+}
+
+
+#container {
+    margin: auto;
+    padding: 80px;
+    max-width: 640px;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+input, button {
+    
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.message-input{
+    display: none;
+    padding: 16px;
+    color: #f9f9f9;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgb(58, 118, 152); 
+    color: #fff;
+}
+
+button:hover {
+    background-color:  rgb(79, 162, 210);
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    background-color: rgb(58, 118, 152);
+    color: #fff;
+    padding: 16px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+}

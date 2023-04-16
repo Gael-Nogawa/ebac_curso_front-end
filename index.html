@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <title>PreencheAí - Formulário</title>
+  </head>
+  <body>
+    <!--  Campo A < campo B - ok
+        - Campo B > campo A - ok
+        - validação -ok
+        - exibir mensagem de sucesso e uma mensagem negativa - ok
+
+        - subir no github - branch chamada exercicio_html_js
+        - copiar link
+
+    -->
+
+    <header id="header">
+      <a id="logo" href="#">PreencheAí&#9997</a>
+      <nav id="nav">
+        <ul id="menu">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="container">
+      <h1>Preencha os dados</h1>
+
+      <form id="form-input">
+        <input type="number" id="valor-a" required placeholder="Valor A" />
+
+        <input type="number" id="valor-b" required placeholder="Valor B" />
+
+        <button type="submit">Enviar</button>
+
+        <p class="message-input">o valor</p>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+    <footer class="container">
+        &copy PreencheAí - Todos os direitos reservados - 2023
+    </footer>
+  </body>
+  
+</html>
