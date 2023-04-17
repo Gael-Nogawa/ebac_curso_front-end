@@ -51,7 +51,7 @@ h1 {
 input, button {
     
     display: block;
-    padding: 10px;
+    padding: 16px;
     margin-bottom: 8px;
     width: 100%;
     border-radius: 10px;
@@ -66,14 +66,18 @@ input, button {
 }
 
 button {
-    background-color: rgb(58, 118, 152); 
+    background-color: rgb(58, 118, 152);
+    border:rgb(58, 118, 152); 
     color: #fff;
+    outline: none;
 }
 
 button:hover {
     background-color:  rgb(79, 162, 210);
+    border:  rgb(79, 162, 210);
     cursor: pointer;
 }
+
 
 footer{
     position: absolute;
