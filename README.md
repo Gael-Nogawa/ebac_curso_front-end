@@ -1,2 +1,6 @@
 # ebac_curso_front-end
-Exercício sobre git e github
+Exercícios:
+- git e github;
+- HTML5 e CSS3;
+- JavaScript;
+- jQuery;
