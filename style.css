@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+    /*
+    border: 1px dashed hotpink;
+    */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    text-align: center;
+    margin: 50px auto;
+
+}
+
+header button{
+    background-color: rgb(244, 244, 27);
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    border: 1px solid beige;
+}
+
+h1 {
+    padding: 20px;
+   
+}
+form {
+    margin: 18px auto;
+    display: block;
+    max-width: 500px;
+    width: 100%;
+}
+form p input, button, #recolher{
+    cursor: pointer;
+    margin: 10px auto;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background-color: beige;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    padding-left: 15px;
+    width: 260px;
+}
+button {
+    width: 150px;
+}
+
+
+ul {
+
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0 10px 50px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+ul li{
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+ul li::marker {
+    color: purple;
+    
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+.riscado {
+    text-decoration: line-through;
+    
+    color: rgba(0,0,0, 0.5);
+}
+
+.container #recolher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}

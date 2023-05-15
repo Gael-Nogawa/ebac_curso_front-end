@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,700;1,100&display=swap" rel="stylesheet">
+    <title>Lista de tarefas</title>
+</head>
+<!--    
+        1 - travar a atualização ok
+        2 - salvar o input ok
+        3 - mandar o input para a li ok
+        4 - mostrar os input's usando a animação do .slideDown() ok
+        
+        5 - clicar e marcar como feito. (text-decoration: line-through)
+            mas tem que ser na <li> que esse efeito precisa ter.
+
+
+    -->
+
+<body>
+    <header>
+        <h1>Fazendo mexer!!!</h1>
+        <button type="button">Abrir lista de tarefas</button>
+    </header>
+    
+    <div class="container">
+        <form>
+            <p>
+                <input id="colocando-nova-tarefa" type="text" placeholder="Insira uma tarefa +" required />
+                <button type="submit">Adicionar</button>
+
+            </p>
+
+            <ul>
+                
+            </ul>
+        </form>
+        <button id="recolher" type="reset">Recolher</button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
