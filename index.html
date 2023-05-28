@@ -4,12 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <title>Document</title>
+    
+    <!-- 
+        - Colocar o accordion para abrir o formulário
+        - Colocar checkbox de 'concordo com termos'
+    
+    -->
+
 </head>
 <body>
     <div class="container">
         
-    </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row">
+                    <div class="col-12 p-5">
+                        <h6 class="h1 text-md-center">Formulário</h6>
+                        <p class="text-md-center"><abbr title="Sistema de gerenciamento de banco de dados">SGBD</abbr></p>
+                        <h6 class="h3 text-muted">Preencha os campos para <mark>avaliação</mark></h6>
+                        </br>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa officia ipsa natus eos quis molestias minima repudiandae, magnam tempore, molestiae quo sapiente iusto corrupti, sunt qui laboriosam! Quaerat, facilis consequuntur?</p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non temporibus consequuntur delectus? Vel assumenda reprehenderit molestiae, tenetur accusantium nulla. Quo, quia perferendis! In ipsa sequi quod facere repudiandae consequuntur!</p>
+                        <p class="text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, adipisci quod ex ea ratione optio dolore sequi. Numquam maiores iste ad ratione officia, itaque ipsam! Corporis in perferendis architecto id.</p>
+                        
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <p class="h2 text-muted mt-5">Faça o preenchimento</p>
+                <form class="mt-5 p-5 form-control needs-validation" novalidate>
+                    <label class="form-label" for="nome">Nome Completo: </label>
+                    <input class="form-control text-capitalize"type="text" id="nome" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o nome completo
+                    </div>
     
+                    <label class="form-label" for="email">E-mail: </label>
+                    <input class="form-control" type="email" id="email" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o seu e-mail
+                    </div>
+    
+                    <label class="form-label" for="celular">Celular: </label>
+                    <input class="form-control" type="tel" id="celular" required>
+                    <div class="invalid-feedback">
+                        Você deve informar o seu número de celular
+                    </div>
+
+                    <label class="form-label" for="mensagem">Mensagem: </label>
+                    <textarea class="form-control"></textarea>
+    
+                    <button class="btn btn-outline-primary my-3" type="submit">Enviar</button>
+
+                </form>
+                <blockquote class="blockquote text-md-end  m-3 p-3">
+                
+                    <p class="mb-0">Não importa quão lento você vá desde que não pare.</p>
+                
+                </blockquote>
+                <blockquote class="blockquote text-md-end m-3 p-3 pt-0">
+    
+                    <footer class="blockquote-footer">Confúcio</footer>
+    
+                </blockquote>
+    
+            </div>
+        </div>
+    <hr>
+
+        <script>
+
+            (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+
+        </script>
+
 </body>
 </html>
