@@ -4,3 +4,4 @@ Exercícios:
 - HTML5 e CSS3;
 - JavaScript;
 - jQuery;
+- Bootstrap;
