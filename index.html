@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <title>Document</title>
-    
-    <!-- 
-        - Colocar o accordion para abrir o formulário
-        - Colocar checkbox de 'concordo com termos'
-    
-    -->
 
 </head>
 <body>
@@ -34,69 +28,93 @@
                     
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6">
-                <p class="h2 text-muted mt-5">Faça o preenchimento</p>
-                <form class="mt-5 p-5 form-control needs-validation" novalidate>
-                    <label class="form-label" for="nome">Nome Completo: </label>
-                    <input class="form-control text-capitalize"type="text" id="nome" required>
-                    <div class="invalid-feedback">
-                        Você deve informar o nome completo
-                    </div>
-    
-                    <label class="form-label" for="email">E-mail: </label>
-                    <input class="form-control" type="email" id="email" required>
-                    <div class="invalid-feedback">
-                        Você deve informar o seu e-mail
-                    </div>
-    
-                    <label class="form-label" for="celular">Celular: </label>
-                    <input class="form-control" type="tel" id="celular" required>
-                    <div class="invalid-feedback">
-                        Você deve informar o seu número de celular
-                    </div>
-
-                    <label class="form-label" for="mensagem">Mensagem: </label>
-                    <textarea class="form-control"></textarea>
-    
-                    <button class="btn btn-outline-primary my-3" type="submit">Enviar</button>
-
-                </form>
-                <blockquote class="blockquote text-md-end  m-3 p-3">
+                <div class="accordion py-5">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta">
+                                <p>Clique para ver o  <strong>formulário</strong></p>
+                            </button>
+                        </div>
+                        <div id="resposta" class="accordion-collapse collapse close">
+                            <div class="accordion-body">
+                                <p class="h2 text-muted mt-5">Faça o preenchimento</p>
+                                <form class="mt-5 p-5 form-control needs-validation" novalidate>
+                                    <label class="form-label py-2" for="nome">Nome Completo: </label>
+                                    <input class="form-control text-capitalize"type="text" id="nome" required>
+                                    <div class="invalid-feedback">
+                                        Você deve informar o nome completo
+                                    </div>
+                    
+                                    <label class="form-label py-2" for="email">E-mail: </label>
+                                    <input class="form-control" type="email" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Você deve informar o seu e-mail
+                                    </div>
+                    
+                                    <label class="form-label py-2" for="celular">Celular: </label>
+                                    <input class="form-control" type="tel" id="celular" required>
+                                    <div class="invalid-feedback">
+                                        Você deve informar o seu número de celular
+                                    </div>
                 
-                    <p class="mb-0">Não importa quão lento você vá desde que não pare.</p>
+                                    <label class="form-label py-2" for="mensagem">Mensagem: </label>
+                                    <textarea class="form-control" id="mensagem"></textarea>
+
+                                    <div class="form-check form-switch py-2">
+                                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos</label>
+                                        <input class="form-check-input" type="checkbox" id="aceito-termos"  required>
+                                        <div class="invalid-feedback">
+                                            Você deve concordar com os termos
+                                        </div>
+    
+                                    </div>
+                    
+                                    <button class="btn btn-primary my-3 d-md-flex align-content-end" type="submit">Enviar</button>
+                                   
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <blockquote class="blockquote text-md-end  m-3 p-3">
                 
-                </blockquote>
-                <blockquote class="blockquote text-md-end m-3 p-3 pt-0">
-    
-                    <footer class="blockquote-footer">Confúcio</footer>
-    
-                </blockquote>
-    
+                        <p class="mb-0">Não importa quão lento você vá desde que não pare.</p>
+                    
+                    </blockquote>
+                    <blockquote class="blockquote text-md-end m-3 p-3 pt-0">
+        
+                        <footer class="blockquote-footer">Confúcio</footer>
+        
+                    </blockquote>
+                </div>
             </div>
         </div>
     <hr>
+    <script>
 
-        <script>
-
-            (() => {
+        (() => {
             'use strict'
+            
+        const forms = document.querySelectorAll('.needs-validation')
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault()
-                    event.stopPropagation()
-                }
+            form.classList.add('was-validated')
+            }, false)
+        })
+        })()  
 
-                form.classList.add('was-validated')
-                }, false)
-            })
-            })()
 
-        </script>
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
