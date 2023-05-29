@@ -3,5 +3,7 @@ Exercícios:
 - git e github;
 - HTML5 e CSS3;
 - JavaScript;
+
+Frameworks:
 - jQuery;
 - Bootstrap;
