@@ -33,31 +33,38 @@ header .container li {
 .menu li {
   font-weight: bold;
   margin-left: 24px;
+  padding-top: 20px;
 }
 .menu li a {
   color: #fff;
   text-decoration: none;
 }
 
-section {
+.container {
   padding: 56px 0;
 }
-section .produtos {
+.container .produtos {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
-  column-gap: 1%;
+  column-gap: 2%;
   row-gap: 4%;
   width: 100%;
 }
-section .produtos .produto-item {
+.container .produtos h3 {
+  padding-top: 10px;
+}
+.container .produtos p {
+  padding-top: 10px;
+}
+.container .produtos .produto-item {
   list-style: none;
 }
-section .produtos .produto-item img {
+.container .produtos .produto-item img {
   width: 100%;
   border-radius: 16px;
 }
-section .produto-button {
+.container .produtos .produto-button {
   display: block;
   background-color: #44bd32;
   color: #fff;
@@ -66,26 +73,31 @@ section .produto-button {
   margin-top: 8px;
   text-decoration: none;
   border-radius: 8px;
+  font-weight: bold;
 }
-section .produto-button:hover {
+.container .produtos .produto-button:hover {
   background-color: #4cd137;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 90%;
+  }
+  .container img {
+    width: 100%;
+  }
+  .container .produto-item {
+    grid-column: 1/-1;
+  }
+}
+@media screen and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
   .container .produtos {
-    grid-template-columns: repeat(2, 48.5%);
+    display: grid;
+    grid-template-columns: repeat(2, 48.66%);
     column-gap: 3%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .produtos {
-    display: block;
-  }
-  .produtos .produto-item {
-    margin-bottom: 32px;
   }
 }
 

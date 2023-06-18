@@ -1,15 +1,16 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exercícios: - git e github; - HTML5 e CSS3; - JavaScript;",
   "main": "index.js",
   "scripts": {
-    "sass": "sass source/main.scss build/main.css --watch",
+    "sass": "sass ./source/pagina/main.scss ./build/main.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.63.3"
-  }
+  },
+  "devDependencies": {}
 }

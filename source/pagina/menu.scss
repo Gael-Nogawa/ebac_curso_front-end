@@ -1,4 +1,4 @@
-@use '../config/cores.scss';
+@use '../config/cores';
 @import 'mixin';
 
 .menu {
@@ -7,12 +7,15 @@
     li {
         font-weight: bold;
         margin-left: 24px;
+        padding-top: 20px;
         
     }
 
     li a {
         color: cores.$corDoTexto;
         text-decoration: none;
+        
+        
     }
 }
 
