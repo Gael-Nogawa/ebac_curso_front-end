@@ -7,3 +7,7 @@ Exercícios:
 Frameworks:
 - jQuery;
 - Bootstrap;
+
+Plugins:
+- SaSS;
+- Gulp;
