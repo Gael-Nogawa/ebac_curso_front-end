@@ -1,0 +1,27 @@
+@use '../config/cores.scss';
+@import 'mixin';
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: cores.$corFundoHeader;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        @include displayFlex();
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        li {
+            list-style: none;
+            
+        }
+    }
+}
