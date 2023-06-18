@@ -71,7 +71,7 @@ section .produto-button:hover {
   background-color: #4cd137;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .container {
     max-width: 80%;
   }
@@ -81,11 +81,12 @@ section .produto-button:hover {
   }
 }
 @media screen and (max-width: 767px) {
-  .produtos {
-    display: block;
+  .container {
+    max-width: 85%;
   }
-  .produtos .produto-item {
-    margin-bottom: 32px;
+  .container .produtos {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
   }
 }
 

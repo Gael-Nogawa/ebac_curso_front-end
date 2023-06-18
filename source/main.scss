@@ -1,11 +1,12 @@
 @use 'config/cores';
 @use 'config/reset';
+@use 'config/variaveis';
 @use 'pagina/cabecalho';
 @use 'pagina/menu';
 @use 'pagina/produtos';
 
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: variaveis.$tablet){
     .container {
         max-width: 80%;
 
@@ -16,12 +17,13 @@
     }
 }
 
-@media screen and (max-width: 767px){
-    .produtos {
-        display: block;
+@media screen and (max-width: variaveis.$mobile){
+    .container {
+        max-width: 85%;
 
-        .produto-item {
-            margin-bottom: 32px;
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(1,100%);
         }
     }
 }
