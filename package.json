@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "1.0.0",
-  "description": "",
+  "description": "Exercícios: - git e github; - HTML5 e CSS3; - JavaScript;",
   "main": "index.js",
   "scripts": {
     "sass": "sass source/main.scss build/main.css --watch",
@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.63.3"
-  }
+  },
+  "devDependencies": {}
 }
