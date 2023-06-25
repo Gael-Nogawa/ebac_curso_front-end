@@ -6,6 +6,9 @@ Exercícios:
 - jQuery;
 - Bootstrap;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5dc62c9 (Added changelog.md e atualização do README.md)
 
 Plugins:
 - SaSS;
