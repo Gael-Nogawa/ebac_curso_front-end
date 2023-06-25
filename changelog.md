@@ -9,5 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+<<<<<<< HEAD
 - Add: Changelog.md
 
+=======
+- Added: changelog.md.
+- Chore: resolvendo conflito no README.md no main.
+
+## [0.0.2] - 2023-06-25
+
+- Fix: Correção da branch main.
+>>>>>>> 10bd50d (Add: changelog.md)
