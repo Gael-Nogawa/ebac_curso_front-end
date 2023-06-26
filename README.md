@@ -12,7 +12,3 @@ Frameworks:
 Plugins:
 - SaSS;
 - Gulp;
--
-=======
-- SASS;
->>>>>>> db29a57 (commit inicial)
