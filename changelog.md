@@ -5,9 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.2] - 2023-06-28
+
+#### Added
+
+- Branch exercicio_gulp
+
+
+
 ## [0.0.1] - 2023-06-26
 
-### Added
+#### Added
 
 - Add: Changelog.md
 - Add: branch exercicio_git
@@ -18,16 +26,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add: branch exercicio_bootstrap
 - Add: branch exercicio_sass
 
-### Fixed: 
+#### Fixed: 
 
 - Correção da branch main
 
-## Removed:
+#### Removed:
 
-- Correção e remoção de arquivos/pastas indesejadas.
+- Correção e remoção de arquivos/pastas indesejada da branch main
 
-## [0.0.2] - 2023-06-28
-
-### Added
-
-- Branch exercicio_gulp
