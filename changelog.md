@@ -34,3 +34,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Correção e remoção de arquivos/pastas indesejada da branch main
 
+
+## .[0.0.2] - 2023-07-04
+
+- Add: branch exercicio_less
+
