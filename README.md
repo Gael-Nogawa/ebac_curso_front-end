@@ -6,6 +6,6 @@ Exercícios:
 - jQuery;
 - Bootstrap;
 
-Plugins:
+Ferramentas:
 - SaSS;
 - Gulp;
