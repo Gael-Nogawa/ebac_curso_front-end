@@ -12,3 +12,4 @@ Ferramentas:
 - SaSS;
 - Gulp;
 - Less;
+- Gulp;
