@@ -62,7 +62,8 @@ module.exports = function(grunt){
                         {
                             match: 'ENDERECO_DO_JS',
                             replacement: './scripts/main.min.js'
-                        }
+                        },
+                        
                     ]
                 },
                 
@@ -83,7 +84,7 @@ module.exports = function(grunt){
                     collapseWhitespace: true
                 },
                 files: {
-                    'prebuild/index.html': 'src/index.html'
+                    'prebuild/index.html':'src/index.html'
                 }
             }
         },
@@ -107,6 +108,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'uglify', 'clean']); // depois que colocar aqui, ir no package, json pra arrumar.
+    grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'uglify', 'clean']);
     
 }

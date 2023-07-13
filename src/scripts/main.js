@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const jogador1 = "X";
     const jogador2 = "O";
-    let jogadorAtual = jogador2;
+    let jogadorAtual = jogador1;
     let gameOver = false;
     
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function inicializar() {
-        let espacos = document.getElementsByClassName("espaco");
+        let espacos = document.getElementsByClassName("tabuleiro-espaco");
         for (let i = 0; i < espacos.length; i++) {
             espacos[i].addEventListener("click", function() {
                 

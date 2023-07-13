@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import 'mixin.less';
+@import 'mapas.less';
 
-@corDeFundo:#fec06a;
+@breakPointMobile: ~"(max-width: 767px)";
+@breakPointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Pangolin', cursive;
 }
 
@@ -14,61 +16,77 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
-    height: 100vh;
-    background-color: @corDeFundo;
+    height: 100%;
+    background-color: #colors[corDeFundo] ;
 }
 
 .container {
-    padding: 50px 50px;
-}
+    padding: 50px;
 
-#mostrador {
-    margin: 50px;
-    background-color: #34ace0;
-
-    p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #f1f1f1;
-        font-size: 1.5em;
-        img {
-            width: 50px;
-        }
+    @media @breakPointTablet{
+        margin-top: 150px;
+        
     }
     
-}
-h1{
-    font-size: 5em;
-    text-align: center;
-    color: #34ace0;
-}
-img {
-    width: 80px;
+    @media @breakPointMobile {
+
+        #mostrador > p {
+            padding: 10px 50px;
+        }
+    }
+
+
+    h1{
+        font-size: 5em;
+        text-align: center;
+        color: #colors[corDoTabuleiro];
+    }
     
+    
+    #mostrador {
+        margin: 50px;
+        background-color: #colors[corDoTexto];
+        
+        p {
+            .displayAlignJustify();
+            color: #colors[corDoTabuleiro];
+            font-size: 1.5em;
+
+            img {
+                width: 50px;
+            }
+        }
+        
+    }
+    img {
+        width: 80px;
+    }
+
+
+    .tabuleiro {
+        width: 252px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+
+        &-espaco {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #colors[corDoTabuleiro];
+            float:left;
+        }
+        
+    }
+
+
+    #msg-vencedor {
+        padding: 30px;
+        .displayAlignJustify();
+        text-align: center;
+        font-size: 3em;
+        color:  #colors[corDoTexto];
+    }
+
+
 }
 
-.tabuleiro {
-    width: 252px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
-    
-}
-
-.espaco {
-    width: 80px;
-    height: 80px;
-    border: 2px solid rgba(0,0,0, 0.5);
-    float:left;
-    
-}
-
-#msg-vencedor {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 3em;
-    color:  #34ace0;
-}
