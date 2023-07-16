@@ -8,9 +8,11 @@ Bibliotecas:
 - jQuery;
 - Bootstrap;
 
-Ferramentas:
-- SaSS;
-- Gulp;
+Pré-processadores:
+- Sass;
 - Less;
-- Gulp;
-- BEM;
+  
+Ferramentas:
+- Grunt e seus plugins;
+- Gulp e seus plugins;
+- BEM methodology;
