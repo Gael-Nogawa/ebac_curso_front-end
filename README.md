@@ -1,11 +1,13 @@
 # ebac_curso_front-end
-Exercícios:
-- git e github;
+Exercícios sobre:
+- Git e Github;
 - HTML5 e CSS3;
 - JavaScript;
 
 Bibliotecas:
-- jQuery;
+- jQuery
+
+Frameworks:
 - Bootstrap;
 
 Pré-processadores:
@@ -15,4 +17,5 @@ Pré-processadores:
 Ferramentas:
 - Grunt e seus plugins;
 - Gulp e seus plugins;
-- BEM methodology;
+- BEM metodologia;
+- SMACSS metodoogia;
